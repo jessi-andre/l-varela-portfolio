@@ -38,7 +38,7 @@ const feedbackData = [
   },
 
   {
-    // 2 — PELÍCULA INDEPENDIENTE (TAKE-13 NOMINADA EN CANNES)
+    // 2 — PELÍCULA INDEPENDIENTE (NOMINADA EN CANNES)
     name: "Valeria Montes",
     role: "Directora de cine",
     text:
@@ -182,18 +182,19 @@ const projectsData = {
     role: "Actriz principal",
     link: "#"
   },
-  "los-pequenos-amores": {
+  "el-verano-que-no-sabia-que-extranaba": {
     img: "img/port-4.jpg",
-    title: "Los pequeños amores",
-    type: "Película independiente",
-    sub: "Drama íntimo sobre vínculos, familia y veranos eternos.",
+    title: "El Verano que No Sabía que Extrañaba",
+    type: "Cinematografía",
+    sub: "Instante cálido y cinematográfico capturado en un porche bañado por la luz dorada.",
     description:
-      "Una madre y una hija pasan un verano en un pueblo rodeado de naturaleza, donde los silencios hablan más que las palabras.",
-    where: "CasaCine Online",
-    year: "2022",
-    role: "Reparto secundario — Clara",
+      "Una tarde dorada enmarca una historia simple y profunda: miradas que hablan, risas suaves en un porche antiguo y palabras escritas a mano que guardan secretos. Una escena que respira amor, intimidad y cine.",
+    where: "Proyecto personal",
+    year: "2024",
+    role: "Dirección de arte — Fotografía",
     link: "#"
-  },
+  }
+  ,
   "sala-roja": {
     img: "img/port-5.jpg",
     title: "Sala Roja",
@@ -206,18 +207,20 @@ const projectsData = {
     role: "Performer · Creación colectiva",
     link: "#"
   },
-"take-13": {
+
+  "cannes-official-selection": {
   img: "img/port-6.jpg",
-  title: "Los pequeños amores",
-  type: "Película independiente",
-  sub: "Drama íntimo sobre vínculos, familia y veranos eternos.",
+  title: "Cannes — Official Selection",
+  type: "Película / Festival Internacional",
+  sub: "Proyecto destacado en la sección oficial del Festival de Cannes.",
   description:
-    "Una madre y una hija pasan un verano en un pueblo rodeado de naturaleza, donde los silencios hablan más que las palabras. Una historia cálida y contemplativa sobre crecer, cuidar y volver a mirar al otro con nuevos ojos.",
-  where: "Nominada al Festival de Cannes 2022",
-  year: "2022",
-  role: "Reparto secundario — Clara",
+    "Una obra construida desde la sensibilidad, el ritmo contemplativo y la mirada humana. Seleccionada oficialmente por el Festival de Cannes por su narrativa íntima y su estética cinematográfica.",
+  where: "Festival de Cannes",
+  year: "2024",
+  role: "Actuación / Dirección de arte",
   link: "#"
 }
+
 
 };
 

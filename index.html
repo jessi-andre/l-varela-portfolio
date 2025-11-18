@@ -2,19 +2,33 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luna Varela · Actress & Singer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Tipografías modernas -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
-        rel="stylesheet">
+    <title>Luna Varela · Actriz & Cantante</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/favicon3.png" sizes="32x32">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-M9JgG1xB4WxFhIBH4plXqFudvcmxEzr3QcRvx1kUwE6s8Hyp5EN/eY7DPkFfR9Hgi9K9j8j0j2v35Q8rj5r1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- SEO básico -->
+    <meta name="description"
+        content="Luna Varela — actriz y cantante. Rostros intensos, escenas dramáticas y presencia cinematográfica. Actuación, música y retrato visual.">
+    <meta name="author" content="Luna Varela">
+
+    <!-- Redes sociales -->
+    <meta property="og:title" content="Luna Varela · Actriz & Cantante">
+    <meta property="og:description" content="Rostros intensos, luces dramáticas y escenas de película.">
+    <meta property="og:image" content="img/hero.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
     <!-- HEADER -->
@@ -45,18 +59,17 @@
             </div>
 
             <div class="hero-content">
-                <div class="hero-contact-vertical">
-                    <span>Contacto</span>
-                    <div class="hero-line"></div>
-                </div>
-
                 <div class="hero-text">
                     <p class="hero-role">actriz · cantante </p>
                     <h1 class="hero-name">Luna Varela</h1>
                     <p class="hero-description">
-                        Rostros intensos, luces dramáticas y escenas que parecen sacadas de una película.
-                        Trabajo entre la actuación, la música y el retrato fotográfico.
+                        Actuación frente a cámara, música y narrativa visual.
+                        Me interesan los proyectos que exploran emoción, estética y atmósferas cinematográficas.
                     </p>
+                    <a href="https://wa.me/56900000000?text=Hola%20Luna%2C%20quiero%20hacer%20una%20consulta"
+                        class="btn-contactar" target="_blank" rel="noopener noreferrer">
+                        Contactar
+                    </a>
                 </div>
             </div>
         </section>
@@ -90,33 +103,60 @@
         <section class="section portfolio" id="portfolio">
             <header class="section-header">
                 <h2>Portfolio</h2>
-                <p>Selección de proyectos recientes en cine, fotografía y música.</p>
+                <p>Selección de proyectos recientes en cine, teatro y música.</p>
             </header>
 
             <div class="portfolio-grid">
                 <figure class="portfolio-item tall" data-project-id="fuego-lento">
                     <img src="img/port-1.jpg" alt="Retrato cercano con luz cálida" />
+                    <div class="portfolio-overlay">
+                        <h3>Fuego Lento</h3>
+                        <p>Videoclip</p>
+                    </div>
                 </figure>
 
                 <figure class="portfolio-item" data-project-id="tu-y-yo-y-tu">
                     <img src="img/port-2.jpg" alt="Retrato en rojo tipo portada" />
+                    <div class="portfolio-overlay">
+                        <h3>Tú y yo y tú</h3>
+                        <p>Lanzamiento musical</p>
+                    </div>
                 </figure>
 
                 <figure class="portfolio-item" data-project-id="electric-blue">
                     <img src="img/port-3.jpg" alt="Retrato editorial con traje azul" />
+                    <div class="portfolio-overlay">
+                        <h3>Electric Blue</h3>
+                        <p>Film</p>
+                    </div>
                 </figure>
 
-                <figure class="portfolio-item" data-project-id="los-pequenos-amores">
-                    <img src="img/port-4.jpg" alt="Póster de la película Los pequeños amores" />
+                <figure class="portfolio-item" data-project-id="el-verano-que-no-sabia-que-extranaba">
+                    <img src="img/port-4.jpg" alt="Póster del proyecto El verano que no sabía que extrañaba" />
+                    <div class="portfolio-overlay">
+                        <h3>El Verano que No Sabía que Extrañaba</h3>
+                        <p>Cinematografía</p>
+                    </div>
                 </figure>
+
+
 
                 <figure class="portfolio-item wide" data-project-id="sala-roja">
                     <img src="img/port-5.jpg" alt="Butacas rojas de teatro" />
+                    <div class="portfolio-overlay">
+                        <h3>Sala Roja</h3>
+                        <p>Obra de teatro</p>
+                    </div>
                 </figure>
 
-                <figure class="portfolio-item" data-project-id="take-13">
-                    <img src="img/port-6.jpg" alt="Los pequeños amores" />
+                <figure class="portfolio-item" data-project-id="cannes-official-selection">
+                    <img src="img/port-6.jpg" alt="Proyecto seleccionado en Cannes" />
+                    <div class="portfolio-overlay">
+                        <h3>Cannes — Official Selection</h3>
+                        <p>Película</p>
+                    </div>
                 </figure>
+
             </div>
         </section>
 
@@ -208,12 +248,30 @@
             <p class="footer-title">Contact</p>
             <p>+56 9 0000 0000</p>
             <p>booking@lunavarela.art</p>
+
             <div class="footer-social">
-                <a href="#" aria-label="Instagram">IG</a>
-                <a href="#" aria-label="TikTok">TT</a>
-                <a href="#" aria-label="YouTube">YT</a>
+
+                <!-- Instagram -->
+                <a href="#" aria-label="Instagram" class="footer-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor"
+                            stroke-width="1.6" />
+                        <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6" />
+                        <circle cx="17" cy="7" r="1.2" fill="currentColor" />
+                    </svg>
+                </a>
+
+                <a href="#" aria-label="YouTube" class="footer-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M3 8.5C3 7.1 4.1 6 5.5 6h13c1.4 0 2.5 1.1 2.5 2.5v7c0 1.4-1.1 2.5-2.5 2.5h-13A2.5 2.5 0 0 1 3 15.5v-7z"
+                            fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                        <polygon points="11 10 15 12 11 14" fill="currentColor" />
+                    </svg>
+                </a>
+
+
             </div>
-        </div>
     </footer>
 
     <script src="script.js"></script>

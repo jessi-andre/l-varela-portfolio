@@ -220,6 +220,25 @@ body {
     font-size: 0.98rem;
     color: #4a3c35;
 }
+.btn-contactar {
+  display: inline-block;
+  padding: 12px 30px;
+  background: var(--primary, #7a2a32); /* usa tu variable si existe */
+  color: #fff;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.15s ease;
+  margin-top: 30px;
+}
+
+.btn-contactar:hover {
+  background: #622028; /* bordó más oscuro */
+  transform: translateY(-1px);
+}
+
 
 /* ------------ ABOUT ------------ */
 .about {
@@ -303,6 +322,85 @@ body {
 
 .portfolio-item.wide {
     grid-column: span 2;
+}
+/* --- Portfolio Hover Overlay --- */
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Efecto al pasar el mouse */
+.portfolio-item:hover img {
+    filter: brightness(0.45) blur(1px);
+    transform: scale(1.05);
+}
+
+/* Overlay */
+.portfolio-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+
+    color: white;
+    text-align: center;
+
+    transition: opacity 0.4s ease;
+    padding: 20px;
+}
+
+.portfolio-overlay h3 {
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 0.5px;
+}
+
+.portfolio-overlay p {
+    font-size: 1rem;
+    opacity: 0.85;
+}
+
+/* Mostrar overlay al pasar el mouse */
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+.portfolio-item .portfolio-overlay p {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 3px;
+  transition: all 0.3s ease;
+}
+
+.portfolio-item .portfolio-overlay p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1.5px;
+  background-color: currentColor; /* usa el mismo color del texto */
+  transition: width 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay p::after {
+  width: 100%;
 }
 
 
@@ -597,7 +695,6 @@ body {
         max-width: 420px;
     }
 }
-
 /* ------------ FOOTER ------------ */
 .site-footer {
     margin-top: 40px;
@@ -637,22 +734,39 @@ body {
     margin-bottom: 8px;
 }
 
-.footer-col a+a {
+.footer-col a + a {
     display: block;
     margin-top: 4px;
 }
 
+/* Redes sociales footer */
 .footer-social {
-    display: flex;
-    gap: 10px;
-    margin-top: 6px;
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
 }
 
-.footer-social a {
-    border-radius: 999px;
-    border: 1px solid rgba(245, 235, 230, 0.68);
-    padding: 3px 10px;
-    font-size: 0.8rem;
+.footer-icon {
+  color: #f5ebe6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.25s ease;
+}
+
+.footer-icon svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.footer-icon:hover {
+  opacity: 0.6;
+}
+.footer-icon svg {
+  width: 22px;
+  height: 22px;
+  display: block;
 }
 
 /* ------------ RESPONSIVE ------------ */
